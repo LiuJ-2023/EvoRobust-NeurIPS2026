@@ -1020,6 +1020,28 @@ img {
     }
 }
 
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .hero-content {
+        max-width: 1300px;
+    }
+
+    .topics-grid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+
+    .topic-card {
+        grid-column: span 2;
+    }
+
+    .organizers-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
 </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
