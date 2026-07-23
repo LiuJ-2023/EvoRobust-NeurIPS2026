@@ -1014,11 +1014,11 @@ img {
 
 @media (min-width: 1920px) {
     .container {
-        max-width: 1600px;
+        max-width: 1800px;
     }
 
     .hero-content {
-        max-width: 1300px;
+        max-width: 1500px;
     }
 
     .topics-grid {
