@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoRobust Workshop @ NeurIPS 2026 | Self-Evolving Diversity-Driven Search for Robust AI Systems</title>
+    <meta name="description" content="NeurIPS 2026 Workshop on Self-Evolving Diversity-Driven Search for Robust AI Systems. Discovering, evaluating, and improving robust AI through diversity-driven search.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">EvoRobust<span class="nav-logo-year">@NeurIPS'26</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#papers">Call for Papers</a></li>
+                <li><a href="#dates">Dates</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <!-- <li><a href="#committee">Program Committee</a></li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">NeurIPS 2026 Workshop</div>
+            <h1 class="hero-title">Self-Evolving Diversity-Driven Search for Robust AI Systems</h1>
+            <p class="hero-subtitle">Discovering, evaluating, and improving robust AI through self-evolving diversity-driven search.</p>
+            <div class="hero-meta">
+                <div class="hero-meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>Sydney, Australia</span>
+                </div>
+                <div class="hero-meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                    <span>December 2026</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#papers" class="btn btn-primary">Submit a Paper</a>
+                <a href="#overview" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About the Workshop</span>
+                <h2 class="section-title">About the Workshop</h2>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-main">
+                    <p class="lead">
+                        AI systems are rapidly evolving from static predictive models into interactive, multimodal, and agentic systems that reason, use tools, retrieve information, collaborate with other agents, and adapt to diverse users and deployment contexts. As these capabilities expand, robustness can no longer be adequately assessed through a single metric, a fixed benchmark, or a limited set of manually designed test cases. Modern AI failures are diverse, context-dependent, and continuously evolving across languages, cultures, modalities, tool-use trajectories, and multi-turn interactions.
+                    </p>
+                    <p class="lead">
+                        This workshop centers on self-evolving diversity-driven search as a unifying paradigm for robust AI. Rather than optimizing only for the strongest attack, the best defense, or a single safety score, we seek methods that continuously discover, organize, and adapt to diverse safety-relevant behaviors. The goal is not merely to generate variants of known attacks, but to uncover previously uncharacterized failure modes, emerging risks, defense strategies, and trade-offs that arise as AI systems evolve.
+                    </p>
+                </div>
+                <div class="overview-sidebar">
+                    <div class="info-card">
+                        <h3>Workshop Format</h3>
+                        <p>One-day in-person event spanning 7–9 hours, including invited talks, contributed talks, posters, demos, a panel/debate, and structured breakout discussions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Questions -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Central Questions</span>
+                <h2 class="section-title">Key Questions We Will Explore</h2>
+            </div>
+            <div class="questions-grid">
+                <div class="question-card">
+                    <div class="question-number">Q1</div>
+                    <h3>Novel Failure Discovery</h3>
+                    <p>How can we systematically discover novel safety scenarios and previously unseen failure modes in increasingly capable AI systems?</p>
+                </div>
+                <div class="question-card">
+                    <div class="question-number">Q2</div>
+                    <h3>Defining Diversity</h3>
+                    <p>How should diversity be defined and measured when evaluating robustness, red-teaming coverage, and safety benchmarks?</p>
+                </div>
+                <div class="question-card">
+                    <div class="question-number">Q3</div>
+                    <h3>Behavioral Representations</h3>
+                    <p>What behavioral descriptors and representations are most useful for organizing safety-relevant failures across languages, modalities, tools, users, and interaction trajectories?</p>
+                </div>
+                <div class="question-card">
+                    <div class="question-number">Q4</div>
+                    <h3>Search & Trade-offs</h3>
+                    <p>How can diversity-driven search, co-evolution, multitasking and multi-objective optimization help navigate safety trade-offs, transfer knowledge across related robustness challenges, and reveal emerging risk categories?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Scope</span>
+                <h2 class="section-title">Topics of Interest</h2>
+                <p class="section-desc">The workshop focuses on self-evolving diversity-driven search methods for robust AI systems, evolutionary computation, LLMs, multimodal foundation models, tool-using agents, multi-agent systems, personalization, privacy-preserving AI, fairness-aware AI, and robust alignment.</p>
+            </div>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                    </div>
+                    <h3>Safety Scenario Search & Failure Discovery</h3>
+                    <ul>
+                        <li>Formalizing complex safety and robustness scenario spaces</li>
+                        <li>Discovering novel, rare, and previously uncharacterized failure modes</li>
+                        <li>Evolutionary, open-ended, and adaptive safety evaluation</li>
+                        <li>Novelty search for long-tail and emerging risks</li>
+                    </ul>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Novelty Search & Quality-Diversity for Robustness</h3>
+                    <ul>
+                        <li>Novelty search and quality-diversity algorithms for robustness</li>
+                        <li>Behavioral repertoires of failures, defenses, and safety</li>
+                        <li>Diversity and coverage metrics for safety evaluation</li>
+                        <li>Behavioral descriptors for organizing safety-relevant outcomes</li>
+                    </ul>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+                    </div>
+                    <h3>Multi-Objective Trustworthy AI</h3>
+                    <ul>
+                        <li>Multi-objective modeling of safety, helpfulness, fairness, privacy, and transparency</li>
+                        <li>Multi-objective optimization for critical safety requirements</li>
+                        <li>Safety–helpfulness and robustness–utility trade-offs</li>
+                        <li>Optimization methods under competing trustworthiness objectives</li>
+                    </ul>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                    </div>
+                    <h3>Agentic Safety & Interactive Robustness</h3>
+                    <ul>
+                        <li>Safety and robustness of tool-using and autonomous agents</li>
+                        <li>Long-horizon failures, unsafe actions, and goal misalignment</li>
+                        <li>Multi-agent deception, collusion, coordination failures, and emergent risks</li>
+                        <li>Human oversight, controllability, and safe adaptation under dynamic feedback</li>
+                    </ul>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+                    </div>
+                    <h3>Benchmarks and Governance</h3>
+                    <ul>
+                        <li>Diversity-aware and continuously evolving safety benchmarks</li>
+                        <li>Automated generation of test cases, scenarios, and evaluation tasks</li>
+                        <li>Coverage, novelty, and robustness metrics for dynamic evaluation</li>
+                        <li>Responsible release and governance of search-based safety research</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Papers -->
+    <section id="papers" class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Call for Papers</span>
+                <h2 class="section-title">Submit Your Research</h2>
+                <p class="section-desc">We invite submissions on all aspects of self-evolving diversity-driven search for robust AI systems, including but not limited to the topics listed in the scope above.</p>
+            </div>
+            <div class="cfp-grid">
+                <div class="cfp-main">
+                    <h3>Submission Guidelines</h3>
+                    <div class="guideline-list">
+                        <div class="guideline-item">
+                            <strong>Submission URL</strong>
+                            <span><a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/EvoRobust" target="_blank" rel="noopener noreferrer">https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/EvoRobust</a></span>
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Format</strong>
+                            <span>All submissions must be in PDF format and anonymized.</span>
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Page Limit</strong>
+                            <span>Submissions are limited to four content pages, including all figures and tables; unlimited additional pages containing references and supplementary materials are allowed. Camera-ready versions may go up to five content pages.</span>
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Style File</strong>
+                            <span>You must format your submission using the NeurIPS 2026 LaTeX style file. The maximum file size for submissions is 50MB.</span>
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Dual-submission Policy</strong>
+                            <span>We welcome ongoing and unpublished work. We will also accept papers that are under review at the time of submission, or that have been recently accepted without published proceedings.</span>
+                        </div>
+                        <div class="guideline-item">
+                            <strong>Non-archival</strong>
+                            <span>The workshop is a non-archival venue and will not have official proceedings. Workshop submissions can be subsequently or concurrently submitted to other venues.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cfp-sidebar">
+                    <div class="submission-card">
+                        <h3>Submission Portal</h3>
+                        <p>Submit your paper through the EvoRobust OpenReview workshop page.</p>
+                        <a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/EvoRobust" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Submit on OpenReview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section id="dates" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Timeline</span>
+                <h2 class="section-title">Important Dates</h2>
+                <p class="section-desc">All deadlines are 11:59 PM <strong>AoE (Anywhere on Earth)</strong>, tentative pending final NeurIPS scheduling.</p>
+            </div>
+            <div class="dates-table-wrapper">
+                <table class="dates-table">
+                    <tbody>
+                        <tr>
+                            <td>CFP Release</td>
+                            <td>June 15, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Submission Deadline</td>
+                            <td>August 29, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Reviewer Assignment</td>
+                            <td>Within 3 days after submission</td>
+                        </tr>
+                        <tr>
+                            <td>Reviews Due</td>
+                            <td>September 15, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Author Notification</td>
+                            <td>September 22, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Camera-ready Deadline</td>
+                            <td>October 15, 2026</td>
+                        </tr>
+                        <tr>
+                            <td>Workshop Date</td>
+                            <td>December 2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Program</span>
+                <h2 class="section-title">Tentative Schedule</h2>
+                <p class="section-desc">All times are in local Sydney time (AEDT, GMT+11).</p>
+            </div>
+            <div class="schedule-table-wrapper">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Time</th>
+                            <th style="width: 40%;">Session</th>
+                            <th style="width: 40%;">Speaker / Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00 – 08:10</td>
+                            <td>Opening Remarks</td>
+                            <td>Organizers</td>
+                        </tr>
+                        <tr>
+                            <td>08:10 – 09:10</td>
+                            <td><strong>Keynote Talk</strong></td>
+                            <td>Xin Yao, Lingnan University</td>
+                        </tr>
+                        <tr>
+                            <td>09:20 – 09:50</td>
+                            <td><strong>Invited Talk 2</strong></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 – 10:30</td>
+                            <td><strong>Invited Talk 3</strong></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr class="break-row">
+                            <td>10:30 – 10:50</td>
+                            <td>Coffee Break</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>10:50 – 11:10</td>
+                            <td><strong>Spotlight Talks</strong></td>
+                            <td>Selected Papers</td>
+                        </tr>
+                        <tr>
+                            <td>11:20 – 11:50</td>
+                            <td>Poster Session 1</td>
+                            <td>Accepted Papers</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 – 12:30</td>
+                            <td><strong>Invited Talk 4</strong></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr class="break-row">
+                            <td>12:30 – 13:30</td>
+                            <td>Lunch Break</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>13:30 – 14:00</td>
+                            <td><strong>Invited Talk 5</strong></td>
+                            <td>Junhao Dong, Nanyang Technological University</td>
+                        </tr>
+                        <tr>
+                            <td>14:10 – 14:40</td>
+                            <td><strong>Oral Presentations</strong></td>
+                            <td>Selected Papers</td>
+                        </tr>
+                        <tr>
+                            <td>15:00 – 15:30</td>
+                            <td><strong>Invited Talk 6</strong></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>15:40 – 16:10</td>
+                            <td><strong>Invited Talk 7</strong></td>
+                            <td>TBD</td>
+                        </tr>
+                        <tr>
+                            <td>16:10 – 16:40</td>
+                            <td>Poster Session 2</td>
+                            <td>Accepted Papers</td>
+                        </tr>
+                        <tr>
+                            <td>16:40 – 17:20</td>
+                            <td><strong>Panel Discussion</strong></td>
+                            <td>Invited Speakers & Organizers</td>
+                        </tr>
+                        <tr>
+                            <td>17:20 – 17:30</td>
+                            <td>Closing Remarks</td>
+                            <td>Organizers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invited Speakers -->
+    <section id="speakers" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Invited Speakers</span>
+                <h2 class="section-title">World-Class Researchers</h2>
+            </div>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <img src="images/speakers/xin-yao.gif" alt="Xin Yao" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Xin Yao</h3>
+                        <p class="speaker-affiliation">Lingnan University</p>
+                        <p class="speaker-topic">Keynote: TBD</p>
+                    </div>
+                </div>
+                <div class="speaker-card">
+                    <img src="images/speakers/junhao-dong.jpg" alt="Junhao Dong" class="speaker-image">
+                    <div class="speaker-info">
+                        <h3>Junhao Dong</h3>
+                        <p class="speaker-affiliation">Nanyang Technological University</p>
+                        <p class="speaker-topic">Invited Talk 5</p>
+                    </div>
+                </div>
+            </div>
+            <p class="speakers-more">More speakers to be confirmed.</p>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers" class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Organizers</span>
+                <h2 class="section-title">Workshop Organizers</h2>
+            </div>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <img src="images/organizers/jiao-liu.jpg" alt="Jiao Liu" class="organizer-image">
+                    <h3>Jiao Liu</h3>
+                    <p class="organizer-affiliation">Nanyang Technological University</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/organizers/haofeng-wu.jpg" alt="Haofeng Wu" class="organizer-image">
+                    <h3>Haofeng Wu</h3>
+                    <p class="organizer-affiliation">Nanyang Technological University</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/organizers/seyed-moosavi-dezfooli.jpg" alt="Seyed Mohsen Moosavi-Dezfooli" class="organizer-image">
+                    <h3>Seyed Mohsen Moosavi-Dezfooli</h3>
+                    <p class="organizer-affiliation">Apple Zurich</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/organizers/chaoqi-chen.png" alt="Chaoqi Chen" class="organizer-image">
+                    <h3>Chaoqi Chen</h3>
+                    <p class="organizer-affiliation">Shenzhen University</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/organizers/yonghong-huang.jpg" alt="Yonghong Huang" class="organizer-image">
+                    <h3>Yonghong (Catherine) Huang</h3>
+                    <p class="organizer-affiliation">Google</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/organizers/sergio-escalera.jpg" alt="Sergio Escalera" class="organizer-image">
+                    <h3>Sergio Escalera</h3>
+                    <p class="organizer-affiliation">University of Barcelona</p>
+                </div>
+                <div class="organizer-card">
+                    <img src="images/organizers/yew-soon-ong.jpg" alt="Yew-Soon Ong" class="organizer-image">
+                    <h3>Yew-Soon Ong</h3>
+                    <p class="organizer-affiliation">Nanyang Technological University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Committee (hidden temporarily)
+    <section id="committee" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Program Committee</span>
+                <h2 class="section-title">Reviewers</h2>
+                <p class="section-desc">Based on 60–80 expected submissions, we will expand the PC beyond the preliminary members listed below to ensure three reviews per submission and at most three papers per reviewer.</p>
+            </div>
+            <div class="committee-grid">
+                <div class="committee-member">
+                    <strong>Anna V. Kononova</strong>
+                    <span>Leiden University</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Shuaiqun Pan</strong>
+                    <span>Leiden University</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Zhao Wei</strong>
+                    <span>A*STAR, Singapore</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Caishun Chen</strong>
+                    <span>A*STAR, Singapore</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Yifan Yang</strong>
+                    <span>Nanyang Technological University</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Tong Guo</strong>
+                    <span>Nanyang Technological University</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Z. Jane Wang</strong>
+                    <span>University of British Columbia</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Martin J. McKeown</strong>
+                    <span>University of British Columbia</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Mehrtash Harandi</strong>
+                    <span>Monash University</span>
+                </div>
+                <div class="committee-member">
+                    <strong>Fatih Porikli</strong>
+                    <span>Monash University</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Contact / Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>EvoRobust @ NeurIPS 2026</h3>
+                    <p>Self-Evolving Diversity-Driven Search for Robust AI Systems</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>EvoRobust Organizing Committee</p>
+                    <p><a href="mailto:evorobust-workshop@googlegroups.com">evorobust-workshop@googlegroups.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NeurIPS Workshop on Self-Evolving Diversity-Driven Search for Robust AI Systems. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
