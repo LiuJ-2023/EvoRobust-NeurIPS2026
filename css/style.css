@@ -909,6 +909,10 @@ img {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 18px;
+    }
+
     .nav-menu {
         position: fixed;
         top: var(--header-height);
@@ -944,6 +948,10 @@ img {
         display: flex;
     }
 
+    .hero {
+        padding: calc(var(--header-height) + 40px) 18px 60px;
+    }
+
     .hero-meta {
         flex-direction: column;
         gap: 12px;
@@ -971,10 +979,35 @@ img {
     }
 
     .section {
-        padding: 70px 0;
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: clamp(24px, 7vw, 32px);
+    }
+
+    .dates-table-wrapper,
+    .schedule-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .dates-table,
+    .schedule-table {
+        min-width: 600px;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-title {
+        font-size: clamp(40px, 5vw, 64px);
     }
 }
