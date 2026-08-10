@@ -767,6 +767,15 @@ img {
     margin-bottom: 4px;
 }
 
+.speaker-info h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.speaker-info h3 a:hover {
+    color: var(--color-accent);
+}
+
 .speaker-affiliation,
 .organizer-affiliation {
     font-size: 14px;
