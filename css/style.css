@@ -784,6 +784,15 @@ img {
     margin-bottom: 10px;
 }
 
+.speaker-role {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 6px;
+}
+
 .speaker-topic {
     font-size: 13px;
     color: var(--color-text-light);
